@@ -17,7 +17,7 @@ RSpec.describe Project, type: :model do
     )
   end
 
-  it "can have many notes" do
+  it 'can have many notes' do
     project = FactoryBot.create(:project, :with_notes)
     expect(project.notes.length).to eq 5
   end
